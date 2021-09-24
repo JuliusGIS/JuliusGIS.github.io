@@ -90,13 +90,13 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <td colspan="2">' + (feature.properties['Ville'] !== null ? autolinker.link(feature.properties['Ville'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Adresse'] !== null ? autolinker.link(feature.properties['Adresse'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
