@@ -18,7 +18,7 @@
             margin: 0;
         }
         </style>
-        <title>Carte des boîtes à livres</title>
+        <title>Carte des boîtes à livres alimentées par la Coop 5 pour 100</title>
     </head>
     <body>
         <div id="map">
@@ -53,7 +53,7 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[48.95110691334905,-0.6965883079280504],[49.38569253536514,-0.03299673381560093]]);
+        }).fitBounds([[48.92551542163231,-0.8671027244259268],[49.38988549045578,0.1607857951032816]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -149,7 +149,7 @@
                 return this._div;
             };
             title.update = function () {
-                this._div.innerHTML = '<h2>Carte des boîtes à livres</h2>';
+                this._div.innerHTML = '<h2>Carte des boîtes à livres alimentées par la Coop 5 pour 100</h2>';
             };
             title.addTo(map);
         var baseMaps = {};
